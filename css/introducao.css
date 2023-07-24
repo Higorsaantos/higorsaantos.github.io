@@ -1,0 +1,78 @@
+.introducao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 6rem;
+}
+
+.introducao-conteudo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.titulo-perfil {
+  font-size: 4.5rem;
+  line-height: 1.125; /* ☑️ */ /* esse vai ser 1.125 do font size */
+  font-weight: 700;
+  word-wrap: break-word;
+  color: var(--c13);
+  position: relative; /* pai relative para o filho ser absolute */
+}
+
+.titulo-perfil::before {
+  content: "";
+  background: url(/img/detalhe.svg) no-repeat center;
+  width: 130px;
+  height: 100px;
+  position: absolute;
+  z-index: -1;
+  top: -14px;
+  left: -40px;
+}
+
+.endereco-perfil {
+  font-size: 1.5rem;
+  color: var(--c10);
+}
+
+@media (max-width: 1000px) {
+  .titulo-perfil {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .titulo-perfil::before {
+    width: 30px;
+    height: 10px;
+    left: 0px;
+  }
+
+  .introducao-perfil-img {
+    width: 25%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao > img {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .titulo-perfil {
+    font-size: 2.5rem;
+  }
+
+  .endereco-perfil {
+    font-size: 1.2rem;
+  }
+}

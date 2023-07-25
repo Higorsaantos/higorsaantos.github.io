@@ -24,6 +24,7 @@ ul {
   list-style: none;
 }
 
+/* quando definido width & height in-line no HTML, precisamos agora definir tanto o width quanto o height no CSS */
 img {
   max-width: 100%;
   display: block;

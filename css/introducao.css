@@ -13,11 +13,11 @@
 
 .titulo-perfil {
   font-size: 4.5rem;
-  line-height: 1.125; /* ☑️ */ /* esse vai ser 1.125 do font size */
+  line-height: 1.125;
   font-weight: 700;
   word-wrap: break-word;
   color: var(--c13);
-  position: relative; /* pai relative para o filho ser absolute */
+  position: relative;
 }
 
 .titulo-perfil::before {

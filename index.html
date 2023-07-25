@@ -1,200 +1,189 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.min.css" />
-    <link
-      rel="shortcut icon"
-      href="/img/favicon_io/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <meta
-      name="description"
-      content="Projeto Portfólio do módulo 2 do curso HTML e CSS para Iniciantes da Origamid"
-    />
-    <meta name="author" content="Higor Santos" />
-    <meta name="keywords" content="frontend, desenvolvedor, web, design" />
-    <title>Higor | Desenvolvedor Frontend e UX/UI Design</title>
-  </head>
 
-  <body>
-    <!-- header - cabeçalho -->
-    <header class="container header" id="header">
-      <img src="/img/marca.svg" alt="" width="104" height="38" />
-      <nav class="header-menu">
-        <!-- navegação em página interna com o uso de id (#) -->
-        <a href="#experiencia">Experiência</a>
-        <a href="#formacao">Formação</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.min.css" />
+  <link rel="shortcut icon" href="/img/favicon_io/favicon.ico" type="image/x-icon" />
+  <!-- importação da fonte Fira Sans do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- breve descrição do conteúdo da página -->
+  <meta name="description" content="Projeto portfólio do curso 'HTML e CSS para Iniciantes' da Origamid" />
+  <!-- nome do autor do documento -->
+  <meta name="author" content="Higor Santos" />
+  <!-- palavras-chave SEO dos buscadores -->
+  <meta name="keywords" content="frontend, desenvolvedor, web, design" />
+  <title>Higor Santos | Desenvolvedor Frontend e UX/UI Design</title>
+</head>
 
-    <!-- introducao -->
-    <main class="container introducao">
-      <img
-        class="introducao-perfil-img"
-        src="img/perfil.jpg"
-        alt="Imagem de perfil"
-        width="360"
-        height="520"
-      />
-      <div class="introducao-conteudo">
-        <h1 class="titulo-perfil">
-          Desenvolvedor<br />Front End &<br />
-          UX/UI Designer
-        </h1>
-        <p class="endereco-perfil">Localizado em Santa Catarina 🏖️</p>
-      </div>
-    </main>
+<body>
+  <header class="container header" id="header">
+    <!-- boa prática: definir width & height (sem px etc) na img, resulta na otimização do carregamento -->
+    <img src="/img/marca.svg" alt="" width="104" height="38" />
+    <!-- menu de navegação, tag semântica -->
+    <nav class="header-menu">
+      <!-- navegação em página interna com o uso de id (#) -->
+      <a href="#experiencia">Experiência</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
 
-    <!-- secao experiencia -->
-    <section
-      aria-label="Experiência"
-      id="experiencia"
-      class="container experiencia"
-    >
-      <h2 id="experiencia-titulo" class="secao-titulo">Experiência</h2>
-      <div class="experiencia-conteudo">
-        <p class="experiencia-descricao">
-          Desenvolvo pequenos projetos como o Bikcraft utilizando apenas
-          <strong>HTML</strong>, <strong>CSS</strong> e
-          <strong>JavaScript</strong>. Para aplicativos web como a rede social
-          Dogs eu trabalhei no <strong>UX</strong> e
-          <strong>UI Design</strong> do projeto.
-        </p>
-        <ul>
-          <li class="projeto">
-            <span>2045</span>
-            <h3>Bikcraft</h3>
-            <h3>Desenvolvedor Júnior</h3>
-            <p>
-              No projeto Bikcraft eu trabalhei no desenvolvimento completo do
-              HTML, CSS e JavaScript do site. Além disso, também prestei
-              consultoria no Design.
-            </p>
-            <ul class="habilidades">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-              <li>UX Design</li>
-              <li>UI Design</li>
-            </ul>
-          </li>
-          <li class="projeto">
-            <span>2044-45</span>
-            <h3>Surfbot</h3>
-            <h3>Estagiário</h3>
-            <p>
-              Surfbot é uma empresa que oferece aulas de surf no Rio de Janeiro.
-              O projeto foi feito com HTML, CSS e JavaScript. Todo o projeto foi
-              feito do zero.
-            </p>
-            <ul class="habilidades">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-          </li>
-          <li class="projeto">
-            <span>2044</span>
-            <h3>Brafé</h3>
-            <h3>Desenvolvedor Júnior</h3>
-            <p>
-              Mais de 3 projetos foram desenvolvidos para a empresa Brafé. Eu
-              trabalhei na criação do email marketing e também no HTML.
-            </p>
-            <ul class="habilidades">
-              <li>Email Marketing</li>
-              <li>HTML</li>
-              <li>UX Design</li>
-              <li>UI Design</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </section>
+  <main class="container introducao">
+    <!-- boa prática: definir width & height (sem px etc) na img, resulta na otimização do carregamento -->
+    <img class="introducao-perfil-img" src="img/perfil.jpg" alt="Imagem de perfil" width="360" height="520" />
+    <div class="introducao-conteudo">
+      <h1 class="titulo-perfil">
+        Desenvolvedor<br />Front End &<br />
+        UX/UI Designer
+      </h1>
+      <p class="endereco-perfil">Localizado em Paulo Lopes, Santa Catarina 📍</p>
+    </div>
+  </main>
 
-    <!-- secao formacao -->
-    <section id="formacao">
-      <div class="container formacao">
-        <h2 id="formacao-titulo" class="secao-titulo">formação</h2>
-        <div class="formacao_conteudo">
-          <p class="formacao-descricao">
-            Minha mais recente experiência acadêmica foi o
-            <strong class="span_formacao">mestrado</strong> 🎓 que fiz no
-            exterior em <strong class="span_formacao">UX Design</strong>. Além
-            disso me mantenho sempre atualizado com cursos intensivos online.
+  <!-- como a section sozinha não gera semântica, utilizamos aria-label -->
+  <!-- adicionar id na seção para poder aplicar navegação nos menus -->
+  <section aria-label="Experiência" id="experiencia" class="container experiencia">
+    <h2 id="experiencia-titulo" class="secao-titulo">Experiência</h2>
+    <div class="experiencia-conteudo">
+      <p class="experiencia-descricao">
+        Desenvolvo pequenos projetos como o Bikcraft utilizando apenas
+        <strong>HTML</strong>, <strong>CSS</strong> e
+        <strong>JavaScript</strong>. Para aplicativos web como a rede social
+        Dogs eu trabalhei no <strong>UX</strong> e
+        <strong>UI Design</strong> do projeto.
+      </p>
+      <ul>
+        <li class="projeto">
+          <span>2045</span>
+          <h3>Bikcraft</h3>
+          <h3>Desenvolvedor Júnior</h3>
+          <p>
+            No projeto Bikcraft eu trabalhei no desenvolvimento completo do
+            HTML, CSS e JavaScript do site. Além disso, também prestei
+            consultoria no Design.
           </p>
-          <div class="formacao_formacoes">
-            <ul>
-              <li class="formacoes_lista">
-                <div class="formacoes">
-                  <span class="formacao_titulo">Bacharel</span>
-                  <h4 class="formacao_curso">Administração de Empresas</h4>
-                </div>
-                <span class="formacao_instituicao">UFRRJ</span>
-              </li>
-              <li class="formacoes_lista">
-                <div class="formacoes">
-                  <span class="formacao_titulo">Tecnólogo</span>
-                  <h4 class="formacao_curso">Design Digital</h4>
-                </div>
-                <span class="formacao_instituicao">Infnet</span>
-              </li>
-              <li class="formacoes_lista">
-                <div class="formacoes">
-                  <span class="formacao_titulo">Mestre</span>
-                  <h4 class="formacao_curso">User Experience Design</h4>
-                </div>
-                <span class="formacao_instituicao">UCL</span>
-              </li>
+          <ul class="habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>UX Design</li>
+            <li>UI Design</li>
+          </ul>
+        </li>
+        <li class="projeto">
+          <span>2044-45</span>
+          <h3>Surfbot</h3>
+          <h3>Estagiário</h3>
+          <p>
+            Surfbot é uma empresa que oferece aulas de surf no Rio de Janeiro.
+            O projeto foi feito com HTML, CSS e JavaScript. Todo o projeto foi
+            feito do zero.
+          </p>
+          <ul class="habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+          </ul>
+        </li>
+        <li class="projeto">
+          <span>2044</span>
+          <h3>Brafé</h3>
+          <h3>Desenvolvedor Júnior</h3>
+          <p>
+            Mais de 3 projetos foram desenvolvidos para a empresa Brafé. Eu
+            trabalhei na criação do email marketing e também no HTML.
+          </p>
+          <ul class="habilidades">
+            <li>Email Marketing</li>
+            <li>HTML</li>
+            <li>UX Design</li>
+            <li>UI Design</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- adicionar id na seção para poder aplicar navegação nos menus -->
+  <section id="formacao">
+    <div class="container formacao">
+      <h2 id="formacao-titulo" class="secao-titulo">formação</h2>
+      <div class="formacao_conteudo">
+        <p class="formacao-descricao">
+          Minha mais recente experiência acadêmica foi o
+          <strong class="span_formacao">mestrado</strong> 🎓 que fiz no
+          exterior em <strong class="span_formacao">UX Design</strong>. Além
+          disso me mantenho sempre atualizado com cursos intensivos online.
+        </p>
+        <div class="formacao_formacoes">
+          <ul>
+            <li class="formacoes_lista">
+              <div class="formacoes">
+                <span class="formacao_titulo">Bacharel</span>
+                <h4 class="formacao_curso">Administração de Empresas</h4>
+              </div>
+              <span class="formacao_instituicao">UFRRJ</span>
+            </li>
+            <li class="formacoes_lista">
+              <div class="formacoes">
+                <span class="formacao_titulo">Tecnólogo</span>
+                <h4 class="formacao_curso">Design Digital</h4>
+              </div>
+              <span class="formacao_instituicao">Infnet</span>
+            </li>
+            <li class="formacoes_lista">
+              <div class="formacoes">
+                <span class="formacao_titulo">Mestre</span>
+                <h4 class="formacao_curso">User Experience Design</h4>
+              </div>
+              <span class="formacao_instituicao">UCL</span>
+            </li>
+          </ul>
+        </div>
+        <div class="cursos-idiomas">
+          <div class="cursos-idiomas_conteudo">
+            <h4 class="cursos-titulo">Cursos Intensivos</h4>
+            <ul class="cursos-intensivos">
+              <li class="curso">UX Design & IU Design</li>
+              <span class="cursos-duracao">56h</span>
+              <li class="curso">Front End para Iniciantes</li>
+              <span class="cursos-duracao">72h</span>
             </ul>
           </div>
-          <div class="cursos-idiomas">
-            <div class="cursos-idiomas_conteudo">
-              <h4 class="cursos-titulo">Cursos Intensivos</h4>
-              <ul class="cursos-intensivos">
-                <li class="curso">UX Design & IU Design</li>
-                <span class="cursos-duracao">56h</span>
-                <li class="curso">Front End para Iniciantes</li>
-                <span class="cursos-duracao">72h</span>
-              </ul>
-            </div>
-            <div class="cursos-idiomas_conteudo">
-              <h4 class="idiomas-titulo">Idiomas</h4>
-              <ul class="idiomas-lista">
-                <li class="idioma">
-                  Inglês <span class="idiomas_grau">/ Fluente</span>
-                </li>
-                <li class="idioma">
-                  Espanhol <span class="idiomas_grau">/ Intermediário</span>
-                </li>
-              </ul>
-            </div>
+          <div class="cursos-idiomas_conteudo">
+            <h4 class="idiomas-titulo">Idiomas</h4>
+            <ul class="idiomas-lista">
+              <li class="idioma">
+                Inglês <span class="idiomas_grau">/ Fluente</span>
+              </li>
+              <li class="idioma">
+                Espanhol <span class="idiomas_grau">/ Intermediário</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <footer>
+    <!-- adicionar id na seção para poder aplicar navegação nos menus -->
+    <section id="contato">
+      <p class="rodape-descricao">
+        Estou disponível para novos projetos no momento. Entre em contato
+        comigo e marcamos uma conversa 👋
+      </p>
+      <ul class="footer-contatos">
+        <li class="contatos">lobo@gmail.com</li>
+        <li class="contatos">+55 48 9999-9999</li>
+        <li class="contatos"><a class="instagram" href="#">@instagram</a></li>
+      </ul>
     </section>
-    <footer>
-      <section id="contato">
-        <p class="rodape-descricao">
-          Estou disponível para novos projetos no momento. Entre em contato
-          comigo e marcamos uma conversa 👋
-        </p>
-        <ul class="footer-contatos">
-          <li class="contatos">lobo@email.com</li>
-          <li class="contatos">+55 21 9999-9999</li>
-          <li class="contatos"><a class="instagram" href="#">@instagram</a></li>
-        </ul>
-      </section>
-      <p class="direitos">Lobo. Alguns direitos reservados.</p>
-    </footer>
-  </body>
+    <p class="direitos">Lobo. Alguns direitos reservados.</p>
+  </footer>
+</body>
+
 </html>
